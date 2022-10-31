@@ -3,6 +3,8 @@ import express from "express";
 
 // Refactor the following code to get rid of the legacy Date class.
 // Use Temporal.PlainDate instead. See /test/date_conversion.spec.mjs for examples.
+function convert(date){
+}
 function createApp(database) {
   const app = express();
 
