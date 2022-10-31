@@ -91,8 +91,7 @@ function createApp(database) {
       let holiday = new Date(row.holiday);
       let holiday2 = parseTemporal(row.holiday);
       if (
-        date && date.getFullYear() === holiday.getFullYear() && date.getMonth() === holiday.getMonth() &&
-        date.getDate() === holiday.getDate()
+        date && date.getFullYear() === holiday.getFullYear() && date.getMonth() === holiday.getMonth() && date.getDate() === holiday.getDate()
       ) {
         return true;
       }
