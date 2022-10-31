@@ -82,7 +82,7 @@ function createApp(database) {
   }
 
   function isMonday(date, temporal) {
-    return date.getUTCDay() === 1;
+    return temporal.dayOfWeek === 1;
   }
 
   function isHoliday(date) {
