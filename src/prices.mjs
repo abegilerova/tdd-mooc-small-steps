@@ -6,7 +6,8 @@ import express from "express";
 function convert(date){
   return new Date(42)
     .toTemporalInstant()
-    .toZonedDateTimeISO("UTC").toPlainDate()
+    .toZonedDateTimeISO("UTC")
+    .toPlainDate()
 }
 function createApp(database) {
   const app = express();
