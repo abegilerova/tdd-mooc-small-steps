@@ -22,8 +22,6 @@ function createApp(database) {
     res.json({ cost });
   });
 
-  function parseDate(dateString) {
-  }
 
   function parseTemporal(str) {
     if (str) {
