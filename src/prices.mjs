@@ -89,6 +89,7 @@ function createApp(database) {
     const holidays = database.getHolidays();
     for (let row of holidays) {
       let holiday = new Date(row.holiday);
+      console.log(row.holiday)
       let holiday2 = parseTemporal(row.holiday);
       if (
         date &&
