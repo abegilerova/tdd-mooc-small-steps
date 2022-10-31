@@ -88,8 +88,8 @@ function createApp(database) {
   function isHoliday(temporal) {
     const holidays = database.getHolidays();
     for (let row of holidays) {
-      let holiday2 = parseTemporal(row.holiday);
-      if (temporal && temporal.equals(holiday2)) {
+      let holiday = parseTemporal(row.holiday);
+      if (temporal && temporal.equals(holiday)) {
         return true;
       }
     }
