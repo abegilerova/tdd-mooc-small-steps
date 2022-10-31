@@ -29,7 +29,7 @@ function createApp(database) {
   }
 
   function parseTemporal(str) {
-
+    return Temporal.PlainDate.from(str)
   }
   
   function calculateCost(age, type, date, baseCost) {
