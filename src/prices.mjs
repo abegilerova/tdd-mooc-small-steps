@@ -81,7 +81,7 @@ function createApp(database) {
     return reduction;
   }
 
-  function isMonday(date) {
+  function isMonday(date, temporal) {
     return date.getUTCDay() === 1;
   }
 
