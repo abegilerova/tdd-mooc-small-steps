@@ -4,7 +4,8 @@ import express from "express";
 // Refactor the following code to get rid of the legacy Date class.
 // Use Temporal.PlainDate instead. See /test/date_conversion.spec.mjs for examples.
 function convert(date){
-  return new Date(42).toTemporalInstant().toZonedDateTimeISO("UTC").toPlainDate()
+  return new Date(42)
+    .toTemporalInstant().toZonedDateTimeISO("UTC").toPlainDate()
 }
 function createApp(database) {
   const app = express();
