@@ -29,6 +29,7 @@ function createApp(database) {
   }
 
   function parseTemporal(str) {
+    
   }
   function calculateCost(age, type, date, baseCost) {
     if (type === "night") {
