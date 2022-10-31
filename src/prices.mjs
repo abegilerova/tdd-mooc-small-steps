@@ -23,8 +23,6 @@ function createApp(database) {
   });
 
   function parseDate(dateString) {
-    if (dateString) {
-    }
   }
 
   function parseTemporal(str) {
