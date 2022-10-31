@@ -75,7 +75,7 @@ function createApp(database) {
 
   function calculateReduction(date, temporal) {
     let reduction = 0;
-    if (date && isMonday(temporal) && !isHoliday(date, temporal)) {
+    if (date && isMonday(temporal) && !isHoliday(temporal)) {
       reduction = 35;
     }
     return reduction;
@@ -85,7 +85,7 @@ function createApp(database) {
     return temporal.dayOfWeek === 1;
   }
 
-  function isHoliday(date, temporal) {
+  function isHoliday(temporal) {
     const holidays = database.getHolidays();
     for (let row of holidays) {
       let holiday2 = parseTemporal(row.holiday);
